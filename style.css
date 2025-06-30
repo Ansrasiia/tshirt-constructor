@@ -1,0 +1,24 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+  padding: 30px;
+}
+h2 { color: #2a9186; margin-bottom: 20px; }
+canvas {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  max-width: 100%;
+}
+#controls { margin: 20px 0; }
+select, input[type="file"], button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+#resultImage {
+  margin-top: 20px;
+  max-width: 100%;
+  border: 1px solid #aaa;
+}
