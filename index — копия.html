@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Конструктор дизайна футболки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Конструктор дизайна футболки</h2>
+  <div id="controls">
+    <label>Зона нанесения:
+      <select id="zoneSelect" onchange="changeZone()">
+        <option value="front">Перед</option>
+        <option value="back">Спина</option>
+        <option value="sleeve">Рукав</option>
+      </select>
+    </label>
+    <input type="file" accept="image/*" onchange="loadImage(event)">
+    <button onclick="saveDesign()">Сохранить макет</button>
+  </div>
+  <div id="preview-zone">
+    <canvas id="designCanvas" width="300" height="400"></canvas>
+  </div>
+  <div>
+    <h3>Сохранённый макет:</h3>
+    <img id="resultImage">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
